@@ -1,0 +1,282 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #18192C;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+
+    font-size: 60px;
+}
+
+.main-container {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.tdl-container {
+    background-color: #34354E;
+     
+    border-radius: 25px;
+
+    width: auto;
+    height: auto;
+
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+#task-input {
+    height: 45px;
+
+    background-color: #D9D9D9;
+
+    font-size: 38px;
+
+    width: 372px;
+
+    padding-left: 5px;
+
+    
+    
+
+    border-radius: 4px;
+    border-style: none;
+
+}
+
+
+
+#task-input::placeholder {
+
+    padding-left: 5px;
+}
+
+
+
+.submit-btn {
+    height: 46px;
+    width: auto;
+
+    font-size: 38px;
+
+    background-color: #A559E7;
+    color: black;
+
+    border-radius: 4px;
+    border-style: none;
+
+    margin-left: 14px;
+}
+
+#task-list {
+    list-style-type: none;
+
+    display: none;
+
+    flex-direction: column;
+    
+    
+}
+
+li {
+    display: flex;
+
+    justify-content: space-between;
+
+    min-height: auto;
+    
+    width: 472.63px;
+
+    margin-top: 15px;
+    margin-left: -42px;
+
+    padding-top: -10px;
+    padding-bottom: -10px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+   
+}
+
+
+
+.edit-text {
+    display: flex;
+
+    padding-left: 20px;
+
+    align-items: center;
+
+    
+}
+
+.rec-del {
+    display: flex;
+
+
+
+    padding-right: 20px;
+
+    align-items: center;
+}
+
+.edit-text, .rec-del {
+    margin-top: -22px;
+    margin-bottom: -22px;
+}
+
+
+.edit-btn {
+    fill: #A559E7;
+
+    padding-right: 10px;
+}
+
+.check-btn {
+    fill: #187E22;
+}
+
+.del-btn {
+    fill: #CE1B1E;
+
+    padding-left: 10px;
+}
+
+
+p {
+    font-size: 30px;
+
+    color: white;
+    
+    
+}
+
+/*smaller devices*/
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .tdl-container {
+        width: 450px;
+        
+    }
+
+    .input-submit-container {
+        display: flex;
+    }
+
+    #task-input {
+        height: 64px;
+    }
+
+    #add.submit-btn {
+        height: 64px;
+    }
+
+    .edit-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .task {
+        font-size: 38px;
+    }
+
+    .check-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    .del-btn {
+        height: 45px;
+        width: 45px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .tdl-container {
+        width: 230px;
+        padding: 45px
+    }
+
+    .input-submit-container {
+        display: flex;
+        
+        margin-left: -10px;
+    }
+
+    #task-input {
+        height: 34px;
+        width: 180px;
+
+        font-size: 20px;
+    }
+
+    #add.submit-btn {
+        height: 34px;
+
+        font-size: 20px;
+    }
+
+    li {
+        height: 40px;
+        width: 240px;
+    }
+
+    .edit-text {
+        margin-left: -10px;
+    }
+
+    .edit-btn {
+        height: 24px;
+        width: 24px;
+    }
+
+    .task {
+        font-size: 18px;
+
+        width: 100px;
+    }
+
+    .rec-del {
+        margin-left: 22px;
+    }
+
+    .check-btn {
+        height: 24px;
+        width: 24px;
+    }
+
+    .del-btn {
+        height: 24x;
+        width: 24px;
+
+
+    }
+}
